@@ -76,27 +76,31 @@ Error generating stack: `+o.message+`
 </script>
   <script>(function(){function m(a){var h=a.getAttribute("href");if(!h)return;try{var u=new URL(h,document.baseURI);if((u.protocol==="http:"||u.protocol==="https:")&&u.host!==location.host){a.target="_blank";a.rel="noopener noreferrer";}}catch(e){}}function s(){document.querySelectorAll("a[href]").forEach(m);}if(document.readyState!=="loading"){s();}else{document.addEventListener("DOMContentLoaded",s);}document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a){m(a);}},true);})();</script>
   <!-- Premium Ticket Booking & Sponsorship Buttons -->
-<div style="position:relative; width:90%; max-width:420px; margin:24px auto;
-display:flex; flex-direction:column; gap:14px; z-index:9999;">
+<!-- Premium Floating Buttons -->
+<div style="position:fixed;bottom:18px;left:50%;
+transform:translateX(-50%);width:min(340px,88vw);
+display:flex;flex-direction:column;gap:10px;
+z-index:9999;">
 
   <a href="partnership-sponsorship.html"
-     style="display:flex; align-items:center; justify-content:center;
-     min-height:58px; box-sizing:border-box; padding:14px;
-     border:2px solid #7C3AED; border-radius:14px;
+     style="display:flex;align-items:center;justify-content:center;
+     min-height:54px;padding:12px;box-sizing:border-box;
+     border:2px solid #00D9FF;border-radius:16px;
      background:linear-gradient(110deg,#7C3AED,#00CFFF);
-     color:#FFFFFF; text-decoration:none; text-align:center;
-     font-family:Arial,sans-serif; font-size:15px; font-weight:900;">
+     color:#fff;text-decoration:none;text-align:center;
+     font:bold 14px Arial,sans-serif;
+     box-shadow:0 0 18px rgba(0,207,255,.45);">
      🤝 PARTNERSHIP &amp; SPONSORSHIP
   </a>
 
   <a href="new-year-2027.html"
-     style="display:flex; align-items:center; justify-content:center;
-     min-height:58px; box-sizing:border-box; padding:14px;
-     border:2px solid #F6B638; border-radius:14px;
+     style="display:flex;align-items:center;justify-content:center;
+     min-height:54px;padding:12px;box-sizing:border-box;
+     border:2px solid #F6B638;border-radius:16px;
      background:linear-gradient(135deg,#080808,#30200A,#080808);
-     color:#FFFFFF; text-decoration:none; text-align:center;
-     font-family:Arial,sans-serif; font-size:15px; font-weight:900;
-     box-shadow:0 0 12px rgba(246,182,56,.45);">
+     color:#fff;text-decoration:none;text-align:center;
+     font:bold 14px Arial,sans-serif;
+     box-shadow:0 0 18px rgba(246,182,56,.45);">
      🎟️ 31 DEC TICKET BOOKING →
   </a>
 
