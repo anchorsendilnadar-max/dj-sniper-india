@@ -104,6 +104,44 @@
     @media(max-width:760px){.nav{gap:8px;padding:10px 12px}.brand{gap:9px}.brand-mark{width:52px;height:52px;flex:0 0 52px}.brand-title{font-size:clamp(11px,3.2vw,15px);letter-spacing:.5px}.brand-sub{font-size:8px;letter-spacing:1px}.nav>.btn{padding:11px 12px;font-size:10px}.hero{grid-template-columns:1fr;padding:38px 18px 145px;gap:12px;text-align:center}.hero-art{grid-row:1;min-height:320px;margin:0 -5px}.hero-skull{max-height:360px;width:100%}.hero-art:before{width:260px;height:260px}.hero-art:after{width:170px;height:170px}.hero-actions{justify-content:center}.hero p{margin-left:auto;margin-right:auto}.art-label{bottom:-2px}.floating{bottom:145px;right:8px;gap:7px}.float-btn{width:43px;height:43px;font-size:19px}.floating-events{bottom:8px;width:calc(100% - 20px);gap:7px}.floating-events .event-btn{min-height:47px;padding:11px 8px;font-size:11px;letter-spacing:0}.section{padding-bottom:35px}footer{padding-bottom:135px}}
     @media(max-width:390px){.brand-sub{display:none!important}.brand-mark{width:45px;height:45px;flex-basis:45px}.nav>.btn{font-size:9px;padding:10px}.hero-art{min-height:280px}}
 
+/* DJ SNIPER CHARITY BUTTON */
+.charity-mini-btn {
+  position: fixed;
+  right: 14px;
+  bottom: 145px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: calc(100vw - 28px);
+  padding: 8px 11px;
+  border: 1px solid #ff3434;
+  border-radius: 30px;
+  background: rgba(18, 8, 8, 0.96);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(255, 30, 30, 0.25);
+}
+
+.charity-mini-btn:hover {
+  background: #b90000;
+}
+
+.charity-mini-btn span {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .charity-mini-btn {
+    right: 10px;
+    bottom: 135px;
+    font-size: 10px;
+    padding: 7px 9px;
+  }
+}
+    
   </style>
 </head>
 <body>
@@ -120,6 +158,11 @@
       <a class="btn btn-red" href="https://wa.me/918451817707?text=Hi%20DJ%20SNIPER%20-%20Booking%20enquiry" target="_blank" rel="noopener noreferrer">WHATSAPP ↗</a>
     </nav>
   </header>
+  
+<a href="charity.html" class="charity-mini-btn" aria-label="Charity - 50% of Event Profits Always">
+  ❤️ <span>50% of Event Profits Always for Charity</span>
+</a>
+  
 
   <main>
     <section class="hero" id="home">
@@ -228,5 +271,12 @@
       audio.addEventListener('pause', function(){button.textContent='▶';button.classList.remove('playing');});
     });
   </script>
+  
+<!-- DJ Sniper Charity Button -->
+<a href="charity.html" class="charity-mini-btn"
+   aria-label="Charity - 50% of Event Profits Always">
+  ❤️ <span>50% of Event Profits Always for Charity</span>
+</a>
+  
 </body>
 </html>
