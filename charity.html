@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="DJ Sniper India Charity Initiative — supporting education, sports, health, children, communities, culture, women, youth, animals and nature.">
+<title>Charity Initiative | DJ Sniper India</title>
+<style>
+:root{--red:#ff2424;--red2:#b40000;--gold:#f4c96b;--bg:#080808;--panel:#141414;--muted:#bdbdbd;--line:#303030}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#310808 0%,#100707 34%,var(--bg) 72%);color:#f7f7f7;font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:repeating-linear-gradient(115deg,transparent 0 100px,rgba(255,20,20,.035) 101px 102px)}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,7,7,.92);backdrop-filter:blur(12px);border-bottom:1px solid #4a1717}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:1px}
+.brand-mark{width:48px;height:48px;border-radius:50%;border:2px solid var(--red);display:grid;place-items:center;color:var(--red);font-size:12px;text-align:center;line-height:1.05;box-shadow:0 0 18px #ff242444}
+.brand small{display:block;color:#ff5555;font-size:10px;letter-spacing:2px}
+.navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.navlinks a{text-decoration:none;font-size:13px;color:#ddd}
+.navlinks a:hover{color:var(--red)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;text-decoration:none;font-weight:800;border-radius:8px;padding:12px 17px;border:1px solid var(--red);background:var(--red);color:#fff;box-shadow:0 0 22px #ff24242a;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 28px #ff242466}
+.btn.outline{background:transparent;color:#fff}
+.hero{padding:82px 0 60px;text-align:center;position:relative;overflow:hidden}
+.kicker{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:4px;text-transform:uppercase}
+h1{font-size:clamp(36px,7vw,76px);line-height:1.02;margin:15px auto;letter-spacing:-2px;text-transform:uppercase}
+h1 span{color:var(--red);text-shadow:0 0 24px #ff24245c}
+.lead{max-width:760px;margin:20px auto;color:#d0d0d0;font-size:clamp(16px,2.3vw,20px)}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.pill{display:inline-block;border:1px solid #5b2929;background:#170b0b;padding:7px 12px;border-radius:99px;color:#ffb6b6;font-size:12px}
+.section{padding:58px 0}
+.section-title{text-align:center;margin:0 0 12px;font-size:clamp(26px,4vw,42px);line-height:1.15}
+.section-intro{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 30px}
+.commitment{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.feature{background:linear-gradient(145deg,#1b1010,#101010);border:1px solid #552020;border-radius:16px;padding:28px;box-shadow:0 15px 40px #0005}
+.big-number{font-size:clamp(56px,9vw,88px);font-weight:950;line-height:1;color:var(--red);text-shadow:0 0 30px #ff242440}
+.feature h2{margin:10px 0;font-size:25px}
+.feature p{color:#ccc;margin-bottom:0}
+.note{font-size:12px;color:#aaa;margin-top:16px}
+.sectors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.sector{display:flex;gap:14px;align-items:flex-start;padding:19px;background:linear-gradient(135deg,#171717,#101010);border:1px solid var(--line);border-radius:12px;min-height:126px}
+.sector-icon{width:44px;height:44px;flex:0 0 44px;display:grid;place-items:center;border-radius:12px;background:#301010;border:1px solid #692020;font-size:23px}
+.sector h3{margin:0 0 5px;font-size:17px}
+.sector p{margin:0;color:#bdbdbd;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{border-top:2px solid var(--red);background:#121212;border-radius:0 0 12px 12px;padding:20px}
+.step strong{display:block;margin-bottom:8px}
+.step p{margin:0;color:#bbb;font-size:14px}
+.cta{border:1px solid #592020;background:radial-gradient(ellipse at top,#310909,#111);border-radius:18px;padding:34px;text-align:center}
+.cta p{max-width:700px;margin:12px auto 22px;color:#ccc}
+footer{border-top:1px solid #321919;padding:28px 0 88px;color:#aaa;font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.floaters{position:fixed;right:14px;bottom:16px;z-index:30;display:flex;flex-direction:column;gap:9px;align-items:flex-end}
+.floaters a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:21px;background:#151515;border:1px solid #5b2828;box-shadow:0 0 15px #0009}
+.floaters a.whatsapp{background:#0b6c3b;border-color:#1acb70}
+.floaters a.call{background:#9e1010;border-color:#ff4444}
+@media(min-width:850px){.sectors{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.nav{padding:12px 0;align-items:flex-start}.navlinks{gap:10px;justify-content:flex-end}.navlinks a{font-size:12px}.navlinks .desktop-cta{display:none}.commitment{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.hero{padding:60px 0 42px}.section{padding:42px 0}.feature{padding:23px}.cta{padding:26px 18px}}
+@media(max-width:440px){.brand{gap:8px;font-size:13px}.brand-mark{width:40px;height:40px}.brand small{font-size:8px}.navlinks{max-width:165px}.sectors{grid-template-columns:1fr}.hero-actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="DJ Sniper India home">
+      <span class="brand-mark">DJ<br>SNIPER</span>
+      <span>DJ SNIPER INDIA<small>MUSIC • UNITY • HUMANITY</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="#mission">Mission</a>
+      <a href="#sectors">Charity Sectors</a>
+      <a href="#transparency">Transparency</a>
+      <a class="btn desktop-cta" href="#join">Support the Mission</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="pill">DJ SNIPER INDIA • CHARITY INITIATIVE</span>
+    <p class="kicker">Music Hits Different. Humanity Matters.</p>
+    <h1>Turn Every Event<br>Into <span>Positive Impact.</span></h1>
+    <p class="lead">We believe entertainment can do more than bring people together. Our charity initiative is built around sharing success, supporting communities and creating meaningful change.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#mission">Our 50% Commitment</a>
+      <a class="btn outline" href="#sectors">Explore 10 Causes</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="mission">
+  <div class="wrap">
+    <h2 class="section-title">Our Charity Commitment</h2>
+    <p class="section-intro">A promise to use the power of music and events to support people, communities and the world around us.</p>
+    <div class="commitment">
+      <article class="feature">
+        <div class="big-number">50%</div>
+        <h2>Of Event Profits for Charity</h2>
+        <p>DJ Sniper India is committed to donating 50% of the profit earned from every event to charitable and social welfare initiatives across our focus areas.</p>
+        <p class="note">The commitment applies to event profit, not total ticket sales or gross revenue. Donation details will be published when verified records are available.</p>
+      </article>
+      <article class="feature">
+        <h2>Why We Do It</h2>
+        <p>Music creates connection. Events create opportunity. We want that energy to reach beyond the stage—towards education, health, inclusion, culture, animal care and a healthier planet.</p>
+        <p>We aim to work with credible community groups and service organisations, and to share updates on initiatives as they are completed.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sectors">
+  <div class="wrap">
+    <h2 class="section-title">10 Causes. One Mission.</h2>
+    <p class="section-intro">Our planned charitable focus spans these ten sectors. Each initiative will depend on identified needs, suitable partners and available funds.</p>
+    <div class="sectors">
+      <article class="sector"><div class="sector-icon">📚</div><div><h3>Education Welfare</h3><p>Learning resources, school support and opportunities for students facing barriers to education.</p></div></article>
+      <article class="sector"><div class="sector-icon">🏆</div><div><h3>Sports Welfare</h3><p>Encouraging young athletes, access to sports equipment and community sports activities.</p></div></article>
+      <article class="sector"><div class="sector-icon">🩺</div><div><h3>Health Welfare</h3><p>Health awareness, medical assistance and support for people in need.</p></div></article>
+      <article class="sector"><div class="sector-icon">🧒</div><div><h3>Child Welfare</h3><p>Supporting child safety, wellbeing, learning and access to essential needs.</p></div></article>
+      <article class="sector"><div class="sector-icon">🤝</div><div><h3>Social Welfare</h3><p>Community support, essential supplies and assistance for vulnerable families.</p></div></article>
+      <article class="sector"><div class="sector-icon">🎭</div><div><h3>Cultural Welfare</h3><p>Celebrating local arts, cultural heritage, creativity and inclusive community events.</p></div></article>
+      <article class="sector"><div class="sector-icon">👩</div><div><h3>Women Welfare</h3><p>Promoting women’s safety, opportunity, dignity and empowerment.</p></div></article>
+      <article class="sector"><div class="sector-icon">🌟</div><div><h3>Youth Welfare</h3><p>Skills, mentoring, positive opportunities and youth development initiatives.</p></div></article>
+      <article class="sector"><div class="sector-icon">🐾</div><div><h3>Animal Welfare</h3><p>Responsible animal care, feeding support and animal protection initiatives.</p></div></article>
+      <article class="sector"><div class="sector-icon">🌱</div><div><h3>Nature & Environment</h3><p>Tree planting, cleaner surroundings, conservation awareness and environmental action.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="transparency">
+  <div class="wrap">
+    <h2 class="section-title">Transparency & Accountability</h2>
+    <p class="section-intro">Trust matters. We will distinguish our commitment from completed donations and publish only details that can be supported by records.</p>
+    <div class="steps">
+      <article class="step"><strong>01 — Track Event Profit</strong><p>Record event income and eligible expenses so the profit calculation can be explained.</p></article>
+      <article class="step"><strong>02 — Direct Support</strong><p>Allocate the committed share to selected charitable initiatives or suitable partner organisations.</p></article>
+      <article class="step"><strong>03 — Share Verified Updates</strong><p>Publish available donation confirmations, activity summaries and impact updates after verification.</p></article>
+    </div>
+    <p class="note">No donation amount or completed activity is claimed on this page unless and until it is documented and verified.</p>
+  </div>
+</section>
+
+<section class="section" id="join">
+  <div class="wrap">
+    <div class="cta">
+      <p class="kicker">Join the Mission</p>
+      <h2 class="section-title">Let’s Make Every Beat Matter.</h2>
+      <p>Are you a community organisation, volunteer, or potential charity partner? Contact DJ Sniper India to discuss responsible collaboration and future initiatives.</p>
+      <div class="hero-actions">
+        <a class="btn" href="mailto:info@djsniperindia.com?subject=DJ%20Sniper%20India%20Charity%20Partnership">Contact for Charity Partnership</a>
+        <a class="btn outline" href="index.html">Back to Main Website</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div><strong>DJ SNIPER INDIA</strong><br>Music. Unity. Humanity.</div>
+    <div>Contact: <a href="mailto:info@djsniperindia.com">info@djsniperindia.com</a> · <a href="tel:+918451817707">+91 84518 17707</a></div>
+    <div>© <span id="year"></span> DJ Sniper India</div>
+  </div>
+</footer>
+
+<div class="floaters" aria-label="Quick contact">
+  <a class="whatsapp" href="https://wa.me/918451817707?text=Hello%20DJ%20Sniper%20India%2C%20I%27d%20like%20to%20discuss%20the%20charity%20initiative." aria-label="WhatsApp DJ Sniper India" title="WhatsApp">✆</a>
+  <a class="call" href="tel:+918451817707" aria-label="Call DJ Sniper India" title="Call">☎</a>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
